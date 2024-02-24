@@ -1,0 +1,13 @@
+Easy -> Links criados durante a aula
+
+Minuto Aula >> 0:47:00 
+
+api.openweathermap.org/geo/1.0/direct?q=vitor&appid={APPID}
+
+
+Tela de informações climáticas:
+
+api.openweathermap.org/data/2.5/weather?lat=-20.318496&lon=-40.285209&appid={APPID}&units=metric&lang=pt_br
+
+api.openweathermap.org/data/2.5/forecast?lat=-20.318496&lon=-40.285209&appid={APPID}&units=metric&lang=pt_br
+
