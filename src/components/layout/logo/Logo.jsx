@@ -1,6 +1,6 @@
 import styled from "styled-components"
-
-// const Img = styled.div``
+// 
+const Img = styled.div``
 
 const VerticalText = styled.h1`
     font-size: 70px;
@@ -17,9 +17,10 @@ const PrimaryColor = styled.span`
 export const Logo = ({ showImage, type }) => {
     return (
         <div>
-            { 
-                showImage && <Img><img src="/woman.svg" /></Img>
-            }
+            { showImage && 
+                <Img>
+                    <img src="/woman.svg" />
+                </Img> }
 
             { type === 'vertical' && 
                 <VerticalText>
