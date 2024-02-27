@@ -17,10 +17,9 @@ const PrimaryColor = styled.span`
 export const Logo = ({ showImage, type }) => {
     return (
         <div>
-            { showImage && 
-                <Img>
-                    <img src="/woman.svg" />
-                </Img> }
+            { 
+                showImage && <img src="/woman.svg" /> 
+            }
 
             { type === 'vertical' && 
                 <VerticalText>

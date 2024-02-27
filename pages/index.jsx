@@ -3,6 +3,7 @@ import theme from "../typography/theme"
 
 import { ImageWithSpace } from "../src/components/layout/ImageWithSpace/ImageWithSpace"
 import { Logo } from "../src/components/layout/logo/Logo"
+import { Input } from "../src/components/form/input/Input"
 
 const StyledDiv = styled.div`
   color: white;
@@ -22,8 +23,8 @@ export default function HomePage () {
   return (
     <ImageWithSpace>
       <StyledDiv>
-        <Logo showImage={true} type='vertical' />
-        <input />
+        <Logo showImage={true} type='vertical' /><br />
+        <Input placeholder="Informe o nome da cidade!" />
       </StyledDiv>
     </ImageWithSpace>
   )
