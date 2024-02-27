@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 const InputStyle = styled.input`
-    color: #5C5C5C;
+    color: #5C5C5C; 
     font-family: sans-serif;
     font-size: 18px;
     font-weight: bold;
