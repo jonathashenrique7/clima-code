@@ -1,7 +1,6 @@
 import { createGlobalStyle, ThemeProvider } from "styled-components"
 import theme from "../typography/theme"
 
-
 const GlobalStyle = createGlobalStyle`
 
   * {

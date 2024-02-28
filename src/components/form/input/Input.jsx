@@ -1,12 +1,13 @@
 import styled from "styled-components"
 
 const InputStyle = styled.input`
-    color: #5C5C5C; 
+    color: darkorange; 
     font-family: sans-serif;
     font-size: 18px;
     font-weight: bold;
     background-color: #f6f6f6;
     border: 0;
+    width: 100%;
     outline: none; 
     padding: 18px;
     border-radius: 12px;
@@ -15,8 +16,6 @@ const InputStyle = styled.input`
 `
 
 export const Input = (props) => {
-    return (
-        <InputStyle {...props} />
-    )
+    return <InputStyle {...props} />
 }
 

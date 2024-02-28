@@ -38,7 +38,7 @@ export default function InputWithSuggestions({ suggestions, ...props }) {
 
 InputWithSuggestions.defaultProps = {
     suggestions: [
-        { text: 'Sugestão', onClick: () => {} }, 
+        { text: 'Sugestão 1', onClick: () => {} }, 
         { text: 'Sugestão 2', onClick: () => {} },
     ]
 }

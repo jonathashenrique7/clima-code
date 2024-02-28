@@ -5,6 +5,7 @@ import { ImageWithSpace } from "../src/components/layout/ImageWithSpace/ImageWit
 import { Logo } from "../src/components/layout/logo/Logo"
 import { Input } from "../src/components/form/input/Input"
 import InputWithSuggestions from "../src/components/form/input/inputWithSuggestions/InputWithSuggestions"
+import { SearchCity } from "../src/components/searchCity/SearchCity"
 
 
 const StyledDiv = styled.div`
@@ -21,7 +22,7 @@ const StyledDiv = styled.div`
   }
 `
 
-const StyledInput = styled(InputWithSuggestions)`
+const StyledInput = styled(SearchCity)`
   width: 100%;
   box-sizing: border-box;
 `
@@ -30,7 +31,6 @@ const InputContainer = styled.div`
 
   @media (min-width: 750px) {
     width: 150%;
-    
   }
   z-index: 100;
 `
@@ -41,7 +41,7 @@ export default function HomePage() {
       <StyledDiv>
         <Logo showImage={true} type='vertical' /><br />
         <InputContainer>
-          <StyledInput placeholder="Informe o nome da cidade!" />
+          <StyledInput  />
         </InputContainer>
       </StyledDiv>
     </ImageWithSpace>
