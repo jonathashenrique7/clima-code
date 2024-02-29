@@ -41,43 +41,44 @@ const InfoLine = styled.p`
     padding: 0 15px;
 `
 
-const InfoText = styled.p`
-
-`
-
 const InfoTemperature = styled.span`
     font-weight: 700px;
     margin-bottom: 5px;
 
     ${ props => props.blue && 'color: blue;' };
-
     ${ props => props.red && 'color: red;' };
 `
 
-const Card = () => {
+const H1 = styled.h1``
+
+const Card = ({
+    title, icon, description, temp, feels, min, max
+}) => {
     return (
-        <CardStyle>
-            <Title>Lorem ipsum</Title>
-            <BasicInfo>
-                <BasicInfoImg src="http://openweathermap.org/img/wn/02d@2x.png" />
-                <BasicInfoText>Algumas nuvens</BasicInfoText>
-            </BasicInfo>
-            <InfoLine>
-                Temperatura<InfoTemperature>777ºC</InfoTemperature>
-            </InfoLine>
+        <>
+            <CardStyle>
+                <Title>{title}</Title>
+                <BasicInfo>
+                    <BasicInfoImg src={`http://openweathermap.org/img/wn/${icon}@2x.png`} />
+                    <BasicInfoText>{description}</BasicInfoText>
+                </BasicInfo>
+                <InfoLine>
+                    Temperatura<InfoTemperature>{temp} Cº</InfoTemperature>
+                </InfoLine>
 
-            <InfoLine>
-                Sensação<InfoTemperature>777ºC</InfoTemperature>
-            </InfoLine>
+                <InfoLine>
+                    Sensação<InfoTemperature>{feels} Cº</InfoTemperature>
+                </InfoLine>
 
-            <InfoLine>
-                Mínima<InfoTemperature blue={true}>777ºC</InfoTemperature>
-            </InfoLine>
+                <InfoLine>
+                    Mínima<InfoTemperature blue={true}>{min} Cº</InfoTemperature>
+                </InfoLine>
 
-            <InfoLine>
-                Máxima<InfoTemperature red={true}>777ºC</InfoTemperature>
-            </InfoLine>
-        </CardStyle>
+                <InfoLine>
+                    Máxima<InfoTemperature red={true}>{max} Cº</InfoTemperature>
+                </InfoLine>
+            </CardStyle>
+        </>
     )
 }
 

@@ -9,4 +9,5 @@ NEXT_PUBLIC_OWM_KEY=
 
  * * * * * * * * * * 
 
-8 -> Configuração e rotas dinâmicas => -43:11 
+9 -> Buscando informações da API ::  -13:11
+
