@@ -31,16 +31,16 @@ export const Logo = ({ showImage, type }) => {
                 showImage && <img src="/woman.svg" /> 
             }
 
-            { type === 'vertical' && 
-                <VerticalText>
-                    Clima <br /><PrimaryColor>Code</PrimaryColor>
-                </VerticalText> }    
+            {   type === 'vertical' && 
+                    <VerticalText>
+                        Clima <br /><PrimaryColor>Code</PrimaryColor>
+                    </VerticalText> }    
 
-            {
+            {    
                 type === 'horizontal' && 
                     <HorizontalText>
                         Clima<CodeStyle>Code</CodeStyle>
-                    </HorizontalText>
+                    </HorizontalText>            
             }
         </div>
     )

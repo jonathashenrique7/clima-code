@@ -1,6 +1,7 @@
 import styled from "styled-components"
 
 import Navbar from "../../../src/components/navbar/Navbar"
+import { Container } from "../../../src/components/layout/container/Container"
 
 const Body = styled.div`
     background-color: #EFEFEF;
@@ -11,7 +12,11 @@ export default function InfoPage() {
     return (
         <>
             <Navbar />
-            <Body>Lorem ipsum</Body>
+            <Body>
+                <Container>
+                    Conteúdo
+                </Container>
+            </Body>
         </>
     )
 }
