@@ -14,6 +14,16 @@ const PrimaryColor = styled.span`
     color: darkorange;
 `
 
+const HorizontalText = styled.h1`
+    font-size: 38px;
+    display: flex;
+`
+
+const CodeStyle = styled.h1`
+    color: darkorange;
+    font-size: 38px;
+`
+
 export const Logo = ({ showImage, type }) => {
     return (
         <div>
@@ -24,7 +34,16 @@ export const Logo = ({ showImage, type }) => {
             { type === 'vertical' && 
                 <VerticalText>
                     Clima <br /><PrimaryColor>Code</PrimaryColor>
-                </VerticalText> }
+                </VerticalText> }    
+
+            {
+                type === 'horizontal' && 
+                    <HorizontalText>
+                        Clima<CodeStyle>Code</CodeStyle>
+                    </HorizontalText>
+            }
         </div>
     )
 }
+
+Logo.defaultProps = { type: 'horizontal', }
