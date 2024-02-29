@@ -3,7 +3,6 @@ import { useRouter } from "next/router"
 
 import InputWithSuggestions from "../form/input/inputWithSuggestions/InputWithSuggestions"
 
-
 export const SearchCity = (props) => {
     const [searchText, setSearchText]  = useState('')
     const [suggestions, setSuggestions] = useState([])

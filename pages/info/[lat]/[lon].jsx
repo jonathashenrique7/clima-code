@@ -4,8 +4,24 @@ import Navbar from "../../../src/components/navbar/Navbar"
 import { Container } from "../../../src/components/layout/container/Container"
 
 const Body = styled.div`
-    background-color: #EFEFEF;
+    background-color: #212222;
     min-height: 100vh;
+`
+
+const Content = styled.div`
+    padding: 80px 0;
+`
+
+const Text = styled.p`
+    font-size: 20px;
+    color: white;
+    padding: 0;
+    margin: 0;
+`
+
+const CityName = styled.h2`
+    font-size: 50px;
+    color: orange;
 `
 
 export default function InfoPage() {
@@ -14,7 +30,10 @@ export default function InfoPage() {
             <Navbar />
             <Body>
                 <Container>
-                    Conteúdo
+                    <Content>
+                        <Text>Previsão do tempo para</Text>
+                        <CityName>Vitória, ES, Brasil</CityName>
+                    </Content> 
                 </Container>
             </Body>
         </>
