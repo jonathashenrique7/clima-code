@@ -62,8 +62,6 @@ export default function InfoPage() {
         }
     }, [lat, lon])
 
-    console.log(futureInfo)
-
     return (
         <>
             <Navbar />
