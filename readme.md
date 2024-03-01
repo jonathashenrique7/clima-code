@@ -1,13 +1,11 @@
-PARA FAZER: 
-
-Escrever a documentação 
-
 .env
 NEXT_PUBLIC_OWM_KEY= 
 
-- Resolver problema visual com as sugestões no index 
+>> PARA FAZER: 
 
- * * * * * * * * * * 
+- Resolver o problema de numeração nos cards -> Converter os numerais para float 
 
-9 -> Buscando informações da API ::  -13:11
+
+
+
 
